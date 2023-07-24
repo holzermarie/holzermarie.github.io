@@ -1,0 +1,105 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px; /* puis en rem, relativement à ça */
+    padding: 0 0.5rem;
+    margin: 0;
+    height: 100%;
+}
+
+.page {
+    max-width: 900px;
+    margin: 0 auto;
+    height: 100%;
+    /*
+    background-image: linear-gradient(5deg, black 75px, transparent 75px);
+    background-position: left bottom;
+    */
+}
+
+header {
+    display:flex; /* horizontal par défaut */
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 3.5rem;
+    margin-bottom: 0.5rem;
+    /*
+    background-color: white;
+    background-image: url(img/triangle.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    */
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+header nav {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+header nav a {
+    padding: 0.25rem 0.5rem;
+    font-weight: bold;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline dotted;
+}
+
+header a.selected {
+    background-color: black;
+    color: white;
+    pointer-events: none;
+}
+
+.header_title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+h2 {
+    padding: 0.5rem 1rem;
+    box-shadow: .25rem .25rem 0 black;
+    border: 1px solid;
+    display: inline-block;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+.chapter {
+    margin-bottom: 3rem;
+}
+
+@media (max-width: 500px) {
+    body {
+        font-size: 14px;
+    }
+
+    header nav {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 0;
+    }
+
+    .header_title {
+        align-self: flex-start;
+    }
+}
