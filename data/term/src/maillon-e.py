@@ -26,8 +26,8 @@ def longueur_it(lst):
 
 
 def nieme_element(n, lst):
-    """ nieme_element(Maillon) -> obj
-    renvoie le n-ième élément de la liste lst
+    """ nieme_element(int, Maillon) -> obj
+    renvoie la valeur du n-ième élément de la liste lst
     les éléments sont numérotés à partir de 0"""
 
 
