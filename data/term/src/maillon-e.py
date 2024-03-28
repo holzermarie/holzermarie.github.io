@@ -29,16 +29,19 @@ def nieme_element(n, lst):
     """ nieme_element(int, Maillon) -> obj
     renvoie la valeur du n-ième élément de la liste lst
     les éléments sont numérotés à partir de 0"""
+    pass
 
 
 def concatener(lst1, lst2):
     """ concatener(Maillon, Maillon) -> Maillon
     concatène les listes lst1 et lst2 sous la forme d'une nouvelle liste """
+    pass
 
 
 def renverser(lst):
     """renverser(Maillon) -> Maillon
     inverse l'ordre de la liste dans une nouvelle liste"""
+    pass
 
     
 # SCRIPT
