@@ -114,3 +114,14 @@ li {
         font-size: 1.5rem;
     }
 }
+
+.python_file::after {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    background: url(img/logo_python_nb.png) center bottom no-repeat;
+      background-size: auto;
+    height: 1em;
+    background-size: 80%;
+    margin-left: 0.5em;
+  }
