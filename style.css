@@ -91,6 +91,7 @@ h2 {
 li {
     margin-bottom: 0.5rem;
     list-style-type: none;
+    margin-left: -1em;
 }
 
 li::before {
