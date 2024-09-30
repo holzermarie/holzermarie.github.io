@@ -90,6 +90,28 @@ h2 {
 
 li {
     margin-bottom: 0.5rem;
+    list-style-type: none;
+}
+
+li::before {
+    content: ""; /*indispensable sinon ça n'affiche rien*/
+    width: 1em;
+    height: 1em;
+    display: inline-block; /*sinon le height n'est pas pris en compte*/
+    box-sizing: border-box;
+    margin-right: 0.5em;
+    margin-bottom: -0.15em;
+}
+
+li:not(.python_file)::before {
+    background-color: black;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+
+li.python_file::before {
+    background: url(img/logo_python_nb.png) center center no-repeat;
+    background-size: 80%;
 }
 
 .chapter {
@@ -114,14 +136,3 @@ li {
         font-size: 1.5rem;
     }
 }
-
-.python_file::after {
-    content: '';
-    display: inline-block;
-    width: 1em;
-    background: url(img/logo_python_nb.png) center bottom no-repeat;
-      background-size: auto;
-    height: 1em;
-    background-size: 80%;
-    margin-left: 0.5em;
-  }
