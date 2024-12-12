@@ -4,7 +4,7 @@ CREATE TABLE "Client" (
 	"prenom"	TEXT,
 	"email"	TEXT,
 	PRIMARY KEY("idC" AUTOINCREMENT)
-)
+);
 
 CREATE TABLE "Location" (
 	"idL"	INTEGER,
@@ -15,7 +15,7 @@ CREATE TABLE "Location" (
 	FOREIGN KEY("idVehi") REFERENCES "Vehicule"("idV"),
 	FOREIGN KEY("idCli") REFERENCES "Client"("idC"),
 	PRIMARY KEY("idL" AUTOINCREMENT)
-)
+);
 
 CREATE TABLE "Modele" (
 	"idM"	INTEGER,
@@ -23,7 +23,7 @@ CREATE TABLE "Modele" (
 	"annee"	INTEGER,
 	"moteur"	TEXT,
 	PRIMARY KEY("idM" AUTOINCREMENT)
-)
+);
 
 CREATE TABLE "Vehicule" (
 	"idV"	INTEGER,
@@ -32,4 +32,4 @@ CREATE TABLE "Vehicule" (
 	"nbKm"	INTEGER,
 	FOREIGN KEY("modele") REFERENCES "Modele"("idM"),
 	PRIMARY KEY("idV" AUTOINCREMENT)
-)
+);
