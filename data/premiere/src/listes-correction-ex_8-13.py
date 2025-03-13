@@ -23,7 +23,7 @@ def symetrie_premiere_bissectrice(p):
     nouvel_y = p[0]
     p[0] = p[1]
     p[1] = nouvel_y
-    
+        
 # 5)
 def translation(p, u):
     p[0] = p[0] + u[0]
@@ -78,7 +78,10 @@ def plus_proche_voisin(liste, p):
 
 print("\n------------ Ex 8 ------------")
 print("1)")
-symetrie_axe_x([2, 3])
+p = [2, 3]
+print(p)
+symetrie_axe_x(p)
+print(p)
 print("2)")
 symetrie_axe_y([2, 3])
 print("3)")
@@ -119,7 +122,7 @@ print("\n------------ Ex 10 ------------")
 
 print("\n------------ Ex 11 ------------")
 une_liste = [45, 78, 98, 5, 9, 6]
-print(inserer(une_liste, [66], 2))
+print(inserer(une_liste, 66, 2))
 
 print("\n------------ Ex 12 ------------")
 print(truc((1, 5), (3, 9)))
