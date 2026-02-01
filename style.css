@@ -137,3 +137,8 @@ li.python_file::before {
         font-size: 1.5rem;
     }
 }
+
+.code{
+    font-family: monospace, monospace;
+    font-weight: normal;
+}
