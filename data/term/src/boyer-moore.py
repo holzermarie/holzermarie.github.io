@@ -2,7 +2,7 @@
 def calcule_table_derniere_occurrence(chaine):
     table_derniere_occurrence = {}
     for j in range(len(chaine)):
-        table_derniere_occurrence[chaine[j]] = j
+        # ....
     return table_derniere_occurrence
 
 def correspondance(sequence, motif, idx_sequence, table_derniere_occurrence):
